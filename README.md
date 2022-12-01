@@ -1,4 +1,4 @@
-# aoc-kotlin-starter
+# aoc-kotlin-2022
 
 :sparkles: [Screenshots](#screenshots) :sparkles:
 
