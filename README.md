@@ -2,8 +2,6 @@
 
 :sparkles: [Screenshots](#screenshots) :sparkles:
 
-Starter template for solving [Advent of Code](https://adventofcode.com) in [Kotlin](https://kotlinlang.org/)
-
 ### Features
 
 * Gradle setup so you can run a specific day or all days on the command line (see **Running** below)
