@@ -19,7 +19,7 @@ class Day1 : Day(1) {
     }
 
     override fun partTwo(): Any {
-        var highestElves = mutableListOf<Int>()
+        val highestElves = mutableListOf<Int>()
         var currentElf = 0
 
         for(input in inputList){
@@ -37,7 +37,6 @@ class Day1 : Day(1) {
                 currentElf = 0
             }
         }
-
-        return highestElves[0] + highestElves[1] + highestElves[2]
+        return highestElves.sum()
     }
 }
