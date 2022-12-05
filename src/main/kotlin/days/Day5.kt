@@ -10,7 +10,9 @@ class Day5 : Day(5){
            crates[instructions[2] - 1] = crates[instructions[2] - 1] + crateToMove
            crates[instructions[1] - 1] = crates[instructions[1] - 1].dropLast(instructions[0])
        }
-        return crates.toString()
+        val topElements = StringBuilder()
+        crates.forEach {item -> topElements.append(item.last())}
+        return topElements
     }
 
     override fun partTwo(): Any {
@@ -21,7 +23,9 @@ class Day5 : Day(5){
             crates[instructions[2] - 1] = crates[instructions[2] - 1] + crateToMove
             crates[instructions[1] - 1] = crates[instructions[1] - 1].dropLast(instructions[0])
         }
-        return crates.toString()
+        val topElements = StringBuilder()
+        crates.forEach {item -> topElements.append(item.last())}
+        return topElements
     }
 
     private fun splitInstructionString(instruction: String): List<Int>{
