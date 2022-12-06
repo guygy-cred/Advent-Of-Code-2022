@@ -27,7 +27,7 @@ class Day5 : Day(5){
         crates.forEach {item -> topElements.append(item.last())}
         return topElements
     }
-
+    
     private fun splitInstructionString(instruction: String): List<Int>{
         return instruction.split("move ", " from ", " to ").let {
             listOf(it[1].toInt(), it[2].toInt(), it[3].toInt())
