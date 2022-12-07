@@ -22,5 +22,4 @@ class Day6 : Day(6){
     }
 
     private fun String.allUnique(): Boolean = all(hashSetOf<Char>()::add)
-
 }
