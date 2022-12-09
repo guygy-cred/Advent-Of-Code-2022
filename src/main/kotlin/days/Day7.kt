@@ -21,12 +21,11 @@ class Day7 : Day(7) {
     private val directories = mutableListOf(rootDirectory)
 
     private fun returnDirectories(): List<Directory>{
-
         var currentDirectory = rootDirectory
 
         inputList.drop(1).forEach {
             if (it.startsWith("dir")) {
-                val childName = it.substring(4, it.length)
+                val childName = it.substring(4)
                 currentDirectory.children[childName] = addChildToCurrentDirectory(childName, currentDirectory)
             }
             if (it.startsWith("$ cd")) {
@@ -38,8 +37,6 @@ class Day7 : Day(7) {
         }
         return directories
     }
-
-
 
     private fun addChildToCurrentDirectory(childName: String, currentDirectory : Directory) : Directory {
         val newChild = Directory(childName, currentDirectory)
